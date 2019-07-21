@@ -11,7 +11,9 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       scalaTest % Test,
       "com.typesafe.akka" %% "akka-stream" % "2.5.23",
-      "com.softwaremill.sttp" %% "core" % "1.6.0"
+      "com.softwaremill.sttp" %% "core" % "1.6.0",
+      "io.circe" %% "circe-generic" % "0.11.1",
+      "io.circe" %% "circe-parser" % "0.11.1"
     )
   )
 
